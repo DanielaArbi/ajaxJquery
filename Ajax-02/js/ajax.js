@@ -7,7 +7,7 @@
 		dataType: 'json'
 	})
 		.done(function (data) {
-
+			console.log( data );
 			var personas = data;
 
 			//recorro mi array de personas
@@ -19,7 +19,7 @@
 				//recorro los tags de personas, un array dentro de otro array
 				for (let j = 0; j < persona.tags.length; j++) {
 					tags += '<span class="label label-primary"> ' + persona.tags[j] + '</span> ';
-					console.log(tags)
+				
 				}
 
 				let html = "";
